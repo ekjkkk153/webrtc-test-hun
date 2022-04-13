@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Chat Room</title>
     <!-- Latest minified Bootstrap & JQuery-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom styles for this template -->
     <style>
         .btn.active {
@@ -34,10 +34,10 @@
 
 <!-- Begin page content -->
 <main role="main" class="container-fluid">
-    <h1>Simple WebRTC Signalling Server</h1>
+    <h1>Homespital 화상채팅 스페이스</h1>
     <input type="hidden" id="id" name="id" th:value="${id}"/>
     <div class="col-lg-12 mb-3">
-        <div class="mb-3" th:text="'User: ' + ${uuid} + ' @ Room #' + ${id}">
+        <div class="mb-3" th:text="'유저: ' + ${uuid} + ' @ 채팅방 #' + ${id}">
             Local User Id
         </div>
         <div class="col-lg-12 mb-3">

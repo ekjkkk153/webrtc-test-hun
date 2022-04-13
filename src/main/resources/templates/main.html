@@ -15,7 +15,7 @@
 
 <!-- Begin page content -->
 <main role="main" class="container">
-    <h1>Simple WebRTC Signaling Server</h1>
+    <h1>Homespital 화상채팅 스페이스</h1>
     <div id="container">
         <p>
             This part receives a room number (or generates new one), and redirects current user there.
@@ -37,9 +37,9 @@
                         </h4>
                     </div>
                     <div class="mb-3">
-                        <label for="id">To create a new room enter your room number,
-                            or press 'Random #' button to get a random one</label>
-                        <input class="form-control" name="id" id="id" type="number" placeholder="Min: 0, max: 99"
+                        <label for="id">새로운 방을 만드시려면 아래에 원하는 숫자를 입력하시거나,
+                            'Random #' 버튼을 눌러 랜덤 숫자 방을 만드실 수 있습니다.</label>
+                        <input class="form-control" name="id" id="id" type="number" placeholder="최소: 0, 최대: 99"
                                min="0" max="99" th:value="${id}" required>
                     </div>
                     <div>
@@ -47,7 +47,7 @@
                             <button class="btn btn-outline-success" type="button">Random #</button>
                         </a>
                         <button name="action" value="create" type="submit" class="btn btn-outline-primary">
-                            Create Selected Room</button>
+                            입력한 번호로 방 만들기</button>
                     </div>
                 </div>
             </div>
